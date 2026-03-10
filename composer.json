@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/scheduler-invoice",
+    "description": "Package scheduler-invoice for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\SchedulerInvoice\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/serializer": "^7.0",
+        "firebase/php-jwt": "^6.0",
+        "symfony/cache": "^7.0",
+        "carbon/carbon": "^3.0",
+        "psc-acme/factory-billing": "^1.0",
+        "psc-acme/connector-billing": "^1.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.14"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
